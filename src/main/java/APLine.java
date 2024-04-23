@@ -1,15 +1,15 @@
 public class APLine{
-  private int myA, myB, myC;
+  private int a, b, c;
   public APLine(int a, int b, int c){
-    myA = a;
-    myB = b;
-    myC = c;
+    this.a = a;
+    this.b = b;
+    this.c = c;
   }
   public double getSlope(){
-    return(-(myA)/(double)(myB));
+    return(-(a)/(double)(b));
   }
   public boolean isOnline(int x, int y){
-    if(((myA*x) + (myB*y) - myC) == 0){
+    if(((a*x) + (b*y) - c) == 0){
       return true;
     }
     return false;
