@@ -6,7 +6,7 @@ public class APLine{
     this.c = c;
   }
   public double getSlope(){
-    return(-(a)/(double)(b));
+    return-(a / ((double) b));
   }
   public boolean isOnline(int x, int y){
     if(((a*x) + (b*y) - c) == 0){
